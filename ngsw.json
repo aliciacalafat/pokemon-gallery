@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1718242364622,
+  "timestamp": 1718242855812,
   "index": "/pokemon-gallery/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "/pokemon-gallery/common.9da5e680b453b047.js",
         "/pokemon-gallery/favicon.ico",
         "/pokemon-gallery/index.html",
-        "/pokemon-gallery/main.4ed316a3cf907620.js",
+        "/pokemon-gallery/main.b57792153d3619d6.js",
         "/pokemon-gallery/polyfills.a359124c1d668592.js",
         "/pokemon-gallery/runtime.2b963fb921399fb3.js",
         "/pokemon-gallery/styles.c328c05977b36e29.css"
@@ -55,8 +55,8 @@
     "/pokemon-gallery/659.a5c6de630cb0dbac.js": "48e58cca7d4938868b3e283a10231042f03de44e",
     "/pokemon-gallery/common.9da5e680b453b047.js": "b6d59ed13694b77d4fca3795e1802120550dcd6f",
     "/pokemon-gallery/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/pokemon-gallery/index.html": "a3910fe5790abc3e3757adca883aa748643908a2",
-    "/pokemon-gallery/main.4ed316a3cf907620.js": "f0ba7fb4385c913c5df806b1c1fc18bacf78b5eb",
+    "/pokemon-gallery/index.html": "599c08e7d7535da150123db7cca754bb87aae30a",
+    "/pokemon-gallery/main.b57792153d3619d6.js": "1aae9fead6faff2687302dcc230092deef35ef18",
     "/pokemon-gallery/polyfills.a359124c1d668592.js": "42a61c761ffccd99b2728f81c8c3637fad6e1f13",
     "/pokemon-gallery/runtime.2b963fb921399fb3.js": "88a31796346f0e68009aaea8b3096a8a87eb5675",
     "/pokemon-gallery/styles.c328c05977b36e29.css": "c1cc2d6ee24279c5974ce82cb9daef65a29da93a"
