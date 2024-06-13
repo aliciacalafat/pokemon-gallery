@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1718237834214,
+  "index": "/pokemon-gallery/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/pokemon-gallery/chunk-3MSUKXEI.js",
+        "/pokemon-gallery/chunk-3RK7BGFG.js",
+        "/pokemon-gallery/chunk-4JVBPVQD.js",
+        "/pokemon-gallery/chunk-BCKFMKUR.js",
+        "/pokemon-gallery/chunk-CW6EYAM7.js",
+        "/pokemon-gallery/favicon.ico",
+        "/pokemon-gallery/index.html",
+        "/pokemon-gallery/main-YNXT6PE6.js",
+        "/pokemon-gallery/polyfills-6EAL64PA.js",
+        "/pokemon-gallery/styles-5ZIRHZEQ.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "pokemon-api",
+      "patterns": [
+        "https:\\/\\/pokeapi\\.co\\/api\\/v2\\/.*"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 86400000,
+      "timeoutMs": 10000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/pokemon-gallery/chunk-3MSUKXEI.js": "4e1b4a7e3a01a66af0c06e94e82ba5d25374e6f6",
+    "/pokemon-gallery/chunk-3RK7BGFG.js": "63f4468068d1b48340508dcaa6eb844fa689d569",
+    "/pokemon-gallery/chunk-4JVBPVQD.js": "f7afb35e402c6ea772951c5be3b5773e4fb6212e",
+    "/pokemon-gallery/chunk-BCKFMKUR.js": "e64eb07f5414cacfae15cab5fda16b35ccedab3a",
+    "/pokemon-gallery/chunk-CW6EYAM7.js": "05368b5acb319e10452656c332955f7b67b0f0f6",
+    "/pokemon-gallery/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/pokemon-gallery/index.html": "1943cc13df9c751e13b21151dd2f9b383cffaef9",
+    "/pokemon-gallery/main-YNXT6PE6.js": "9af44c37795cc67de0edb6c0afb6b6350fdb26b4",
+    "/pokemon-gallery/polyfills-6EAL64PA.js": "d874147a12a6570d9b44e99935e9de8b7f3cabbc",
+    "/pokemon-gallery/styles-5ZIRHZEQ.css": "59de560fe93ec720bfbe3bc05451ec260fa02990"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

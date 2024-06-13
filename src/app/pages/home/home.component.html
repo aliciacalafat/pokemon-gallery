@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="d-flex justify-content-end my-3">
+    <button class="btn btn-secondary me-2" [class.active]="viewMode === 'card'" (click)="toggleViewMode('card')">
+      <i class="bi bi-grid"></i> Card View
+    </button>
+    <button class="btn btn-secondary" [class.active]="viewMode === 'table'" (click)="toggleViewMode('table')">
+      <i class="bi bi-list"></i> Table View
+    </button>
+  </div>
+  <div *ngIf="loading" class="d-flex justify-content-center my-5">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+  <div *ngIf="!loading" [@listAnimation]>
+    <div *ngIf="viewMode === 'table'">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Types</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let pokemon of pokemonList" (click)="viewDetails(pokemon.name)" style="cursor: pointer;">
+            <td><img [src]="pokemon.image" alt="{{ pokemon.name }}" width="50"></td>
+            <td>{{ pokemon.name }}</td>
+            <td>
+              <span *ngFor="let type of pokemon.types" class="badge me-1" [ngClass]="'type-' + type">{{ type }}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="viewMode === 'card'" class="row">
+      <div class="col-md-4" *ngFor="let pokemon of pokemonList" (click)="viewDetails(pokemon.name)" style="cursor: pointer;">
+        <div class="card mb-3">
+          <img [src]="pokemon.image" class="card-img-top" alt="{{ pokemon.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ pokemon.name }}</h5>
+            <p class="card-text">
+              <span *ngFor="let type of pokemon.types" class="badge me-1" [ngClass]="'type-' + type">{{ type }}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
